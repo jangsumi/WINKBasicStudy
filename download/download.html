@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src = "script.js"></script>
     <title>download</title>
 </head>
 <body>
     <div class= "container">
         <div class ="upside">
             <div>
-                <p><img class="logo" src ="./img/logo.png"></p>
+                <p><img class="logo" onclick = "show_star()" src ="./img/logo.png"></p>
             </div>
             <div id = "content">
                 <div>
@@ -21,7 +22,7 @@
                     <p class = "text2">사진 및 비디오</p>
                 </div>
                 <div class="stars">
-                    <div>
+                    <div onclick = "show_alert()">
                         <p><img class="star" src ="./img/star.png"></p>
                     </div>
                     <div>
@@ -42,7 +43,7 @@
                 </div>
             </div>
             <div>
-                <button class="button"> 업데이트 </button>
+                <button class="button" onclick="hide_star()"> 업데이트 </button>
             </div>
         </div>
         <div class = "image">
